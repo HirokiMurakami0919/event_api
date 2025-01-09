@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -12,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2025_01_08_021639) do
+ActiveRecord::Schema[7.1].define(version: 2025_01_09_063521) do
+  create_table "members", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "project_id", null: false
+    t.datetime "deleted_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["project_id"], name: "index_members_on_project_id"
+    t.index ["user_id"], name: "index_members_on_user_id"
+  end
+
   create_table "projects", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name", null: false
     t.string "place", null: false
@@ -21,8 +29,6 @@ ActiveRecord::Schema[7.1].define(version: 2025_01_08_021639) do
     t.datetime "deleted_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "user_id", null: false
-    t.index ["user_id"], name: "index_projects_on_user_id"
   end
 
   create_table "users", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -37,5 +43,6 @@ ActiveRecord::Schema[7.1].define(version: 2025_01_08_021639) do
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
-  add_foreign_key "projects", "users"
+  add_foreign_key "members", "projects"
+  add_foreign_key "members", "users"
 end
