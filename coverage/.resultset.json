@@ -200,6 +200,19 @@
           null
         ]
       },
+      "/Users/murakamihironori/altissima/event_api/spec/factories/projects.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/murakamihironori/altissima/event_api/spec/factories/users.rb": {
         "lines": [
           null,
@@ -219,6 +232,7 @@
         "lines": [
           null,
           null,
+          1,
           1,
           1,
           1,
@@ -285,6 +299,6 @@
         ]
       }
     },
-    "timestamp": 1736388591
+    "timestamp": 1736393995
   }
 }

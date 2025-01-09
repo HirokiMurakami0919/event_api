@@ -13,7 +13,7 @@
       <img src="./assets/0.13.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2025-01-09T11:09:51+09:00">2025-01-09T11:09:51+09:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2025-01-09T12:39:55+09:00">2025-01-09T12:39:55+09:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -29,7 +29,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.12
+         1.11
        </span>
     </span> hits/line
     )
@@ -38,12 +38,12 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>13</b> files in total.
+    <b>14</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>68</b> relevant lines,
-    <span class="green"><b>68</b> lines covered</span> and
+    <b>76</b> relevant lines,
+    <span class="green"><b>76</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -193,9 +193,20 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#c48deb9058e0c299fcc8986de220f7edc38f9960" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">17</td>
-            <td class="cell--number">5</td>
-            <td class="cell--number">5</td>
+            <td class="cell--number">18</td>
+            <td class="cell--number">6</td>
+            <td class="cell--number">6</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#de27cf39167cfb3fc0f5c3992f878795f2894172" class="src_link" title="spec/factories/projects.rb">spec/factories/projects.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">7</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -2726,8 +2737,8 @@
     
 
     <div class="t-line-summary">
-      <b>5</b> relevant lines.
-      <span class="green"><b>5</b> lines covered</span> and
+      <b>6</b> relevant lines.
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -2802,17 +2813,246 @@
 
             
 
+            <code class="ruby">      resources :projects, only: [:show]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            
+              <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">      post &#39;auth&#39;, to: &#39;auth#create&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="7">
+          <li class="never" data-hits="" data-linenumber="8">
             
 
             
 
             <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+
+            
+
+            <code class="ruby">  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+
+            
+
+            <code class="ruby">  # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+
+            
+
+            <code class="ruby">  # Can be used by load balancers and uptime monitors to verify that the app is live.</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="14">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  get &#39;up&#39; =&gt; &#39;rails/health#show&#39;, as: :rails_health_check</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
+            
+
+            
+
+            <code class="ruby">  # Defines the root path route (&quot;/&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+
+            
+
+            <code class="ruby">  # root &quot;posts#index&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="de27cf39167cfb3fc0f5c3992f878795f2894172">
+  <div class="header">
+    <h3>spec/factories/projects.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>7</b> relevant lines.
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">FactoryBot.define do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  factory :project do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    name { &quot;MyString&quot; }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    place { &quot;MyString&quot; }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    start_at { &quot;2025-01-08 10:42:56&quot; }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    end_at { &quot;2025-01-08 10:42:56&quot; }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    deleted_at { &quot;2025-01-08 10:42:56&quot; }</code>
           </li>
         </div>
       
@@ -2828,88 +3068,6 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="9">
-            
-
-            
-
-            <code class="ruby">  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="10">
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="11">
-            
-
-            
-
-            <code class="ruby">  # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="12">
-            
-
-            
-
-            <code class="ruby">  # Can be used by load balancers and uptime monitors to verify that the app is live.</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="13">
-            
-              <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  get &#39;up&#39; =&gt; &#39;rails/health#show&#39;, as: :rails_health_check</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="14">
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="15">
-            
-
-            
-
-            <code class="ruby">  # Defines the root path route (&quot;/&quot;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="16">
-            
-
-            
-
-            <code class="ruby">  # root &quot;posts#index&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="17">
             
 
             
