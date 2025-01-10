@@ -77,5 +77,8 @@ group :development do
   # gem "spring"
   # コード品質
   gem 'rubocop'
+  gem 'rubocop-factory_bot'
+  gem 'rubocop-performance'
   gem 'rubocop-rails'
+  gem 'rubocop-rspec'
 end
