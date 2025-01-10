@@ -1,10 +1,10 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
-RSpec.describe "Api::V1::Projects", type: :request do
-  describe "GET /api/v1/projects/:id" do
+RSpec.describe 'Api::V1::Projects', type: :request do
+  describe 'GET /api/v1/projects/:id' do
     let(:project) { create(:project) }
-   
-
 
     context 'プロジェクトが存在する場合' do
       it 'プロジェクトの詳細を返すこと' do
@@ -23,7 +23,6 @@ RSpec.describe "Api::V1::Projects", type: :request do
           'updated_at' => project.updated_at.as_json,
           'deleted_at' => project.deleted_at.as_json
         )
-
 
         expect(json_response['members'].length).to eq(project.members.length)
 
@@ -47,7 +46,7 @@ RSpec.describe "Api::V1::Projects", type: :request do
 
     context 'プロジェクトが存在しない場合' do
       it 'エラーを返すこと' do
-        get "/api/v1/projects/0"
+        get '/api/v1/projects/0'
         expect(response).to have_http_status(:not_found)
         json_response = JSON.parse(response.body)
         expect(json_response).to include('error' => 'Project not found')

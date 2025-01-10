@@ -10,14 +10,13 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
-
 # 既存のプロジェクトとユーザーを取得
-project = Project.find_by(name: "Modi quae recusandae vero.")
-user = User.find_by(email: "elmer@lubowitz.test")
+project = Project.find_by(name: 'Modi quae recusandae vero.')
+user = User.find_by(email: 'elmer@lubowitz.test')
 
 # メンバーを作成または取得
 if project && user
   Member.find_or_create_by!(project: project, user: user)
 else
-  puts "Project or User not found. Please ensure they exist in the database."
+  puts 'Project or User not found. Please ensure they exist in the database.'
 end
