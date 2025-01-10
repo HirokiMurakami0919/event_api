@@ -3,9 +3,10 @@
 FactoryBot.define do
   factory :user do
     name { 'Test User' }
-    email { 'test@example.com' }
+    email { Faker::Internet.unique.email }
     password { 'password' }
     tel { '123-456-7890' }
     role { 0 }
+    last_sign_in_at { Time.now }
   end
 end

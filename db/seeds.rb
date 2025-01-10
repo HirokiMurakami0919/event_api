@@ -10,22 +10,14 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
-10.times do
-  user = User.create!(
-    name: Faker::Name.name,
-    email: Faker::Internet.email,
-    tel: Faker::PhoneNumber.cell_phone,
-    role: rand(0..2),
-    password: 'password'
-  )
-end
 
-3.times do
-  Project.create!(
-    name: Faker::Lorem.sentence,
-    place: Faker::Address.city,
-    start_at: Faker::Date.between(from: 1.year.ago, to: Date.today),
-    end_at: Faker::Date.between(from: Date.today, to: 1.year.from_now),
-    user_id: User.all.sample.id
-  )
+# 既存のプロジェクトとユーザーを取得
+project = Project.find_by(name: "Modi quae recusandae vero.")
+user = User.find_by(email: "elmer@lubowitz.test")
+
+# メンバーを作成または取得
+if project && user
+  Member.find_or_create_by!(project: project, user: user)
+else
+  puts "Project or User not found. Please ensure they exist in the database."
 end
